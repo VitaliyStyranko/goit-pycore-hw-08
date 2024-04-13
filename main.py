@@ -101,10 +101,6 @@ class AddressBook(UserDict):
     def find(self, name):
         return self.get(name)
 
-    # def delete(self, name):
-    #     del self[name]
-    #     print(f"Record {name} deleted")
-
     def get_upcoming_birthdays(self):
         today = datetime.today().date()
         upcoming_birthdays = []
